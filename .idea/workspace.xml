@@ -25,13 +25,7 @@
     <list default="true" id="ef8ef2c7-ff07-4dcc-b5e8-7172b3e004c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/Colony.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/Colony.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/Simulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Ant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Drone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Drone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Soldier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Soldier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/geometry/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/geometry/Direction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590912147308</updated>
       <workItem from="1590912150562" duration="3156000" />
-      <workItem from="1601631721773" duration="16605000" />
+      <workItem from="1601631721773" duration="17740000" />
     </task>
     <task id="LOCAL-00001" summary="working but not done yet">
       <created>1601644771422</created>
@@ -125,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601644771422</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="working">
+      <created>1601648833382</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601648833382</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +149,8 @@
     </ignored-roots>
     <MESSAGE value="Ants can move without testing" />
     <MESSAGE value="working but not done yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="working but not done yet" />
+    <MESSAGE value="working" />
+    <option name="LAST_COMMIT_MESSAGE" value="working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="553" y="-815" key="#com.intellij.ide.util.MemberChooser" timestamp="1601641376588">
@@ -159,22 +161,22 @@
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
     <state x="478" y="-775" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601640743751" />
-    <state width="1878" height="907" key="GridCell.Tab.0.bottom" timestamp="1601648575615">
+    <state width="1878" height="743" key="GridCell.Tab.0.bottom" timestamp="1601649902936">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="907" key="GridCell.Tab.0.bottom/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601648575615" />
-    <state width="1878" height="907" key="GridCell.Tab.0.center" timestamp="1601648575614">
+    <state width="1878" height="743" key="GridCell.Tab.0.bottom/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601649902936" />
+    <state width="1878" height="743" key="GridCell.Tab.0.center" timestamp="1601649902935">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="907" key="GridCell.Tab.0.center/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601648575614" />
-    <state width="1878" height="907" key="GridCell.Tab.0.left" timestamp="1601648575614">
+    <state width="1878" height="743" key="GridCell.Tab.0.center/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601649902935" />
+    <state width="1878" height="743" key="GridCell.Tab.0.left" timestamp="1601649902935">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="907" key="GridCell.Tab.0.left/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601648575614" />
-    <state width="1878" height="907" key="GridCell.Tab.0.right" timestamp="1601648575615">
+    <state width="1878" height="743" key="GridCell.Tab.0.left/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601649902935" />
+    <state width="1878" height="743" key="GridCell.Tab.0.right" timestamp="1601649902936">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="907" key="GridCell.Tab.0.right/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601648575615" />
+    <state width="1878" height="743" key="GridCell.Tab.0.right/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601649902936" />
     <state width="1878" height="288" key="GridCell.Tab.1.bottom" timestamp="1601647355175">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
@@ -195,10 +197,10 @@
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
     <state x="249" y="-890" key="SettingsEditor/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601631746303" />
-    <state x="447" y="-774" width="586" height="548" key="find.popup" timestamp="1601647266624">
+    <state x="447" y="-774" width="586" height="548" key="find.popup" timestamp="1601648884558">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="447" y="-774" width="586" height="548" key="find.popup/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601647266624" />
+    <state x="447" y="-774" width="586" height="548" key="find.popup/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601648884558" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

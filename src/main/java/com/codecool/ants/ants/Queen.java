@@ -6,12 +6,19 @@ import com.codecool.ants.geometry.Position;
 import java.util.Random;
 
 public class Queen extends Ant {
+    int moodCounter = 1;
+
     public Queen(Position position) {
         super(position);
     }
 
     @Override
     public void move() {
+        if (moodCounter == 0) {
+            moodCounter = r.nextInt(100) + 50;
+        } else {
+            moodCounter--;
+        }
     }
 
     @Override
@@ -20,6 +27,6 @@ public class Queen extends Ant {
     }
 
     public boolean ifMoodForMating() {
-        return this.r.nextBoolean();
+        return moodCounter == 0 ? true : false;
     }
 }

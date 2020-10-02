@@ -69,8 +69,9 @@ public class Colony {
     public void display() {
         Optional ant;
         String print;
-        String separator = " ";
+        String separator = "  ";
         String color;
+        String colPrint;
 
         final String BLACK = "\033[0;30m";   // BLACK
         final String BLUE = "\033[0;34m";    // BLUE
@@ -79,14 +80,20 @@ public class Colony {
         final String GREEN = "\033[0;32m";   // GREEN
         final String CYAN = "\033[0;36m";    // CYAN
 
-
+        String firstRow;
+        StringBuilder firstRowBuild = new StringBuilder();
+        firstRowBuild.append("   ");
         for (int col = 0; col < withAndHeight; col++) {
-            System.out.print(BLUE + col + separator);
+            colPrint = String.format("%2d", col);
+            firstRowBuild.append(BLUE + colPrint + " ");
         }
-        System.out.println(BLACK);
+        firstRowBuild.append(BLACK);
+        firstRow = firstRowBuild.toString();
+
+        System.out.println(firstRow);
 
         for (int row = 0; row < withAndHeight; row++) {
-            System.out.print(BLUE + row + separator);
+            System.out.print(BLUE + String.format("%2d", row) + " ");
             System.out.print(BLACK);
             for (int col = 0; col < withAndHeight; col++) {
                 ant = colonyMap[row][col];
@@ -113,8 +120,10 @@ public class Colony {
                 }
                 System.out.print(color + print + separator + BLACK);
             }
-            System.out.println();
+            System.out.println("|");
         }
+        System.out.println(firstRow);
+
     }
 
     public int getWithAndHeight() {
