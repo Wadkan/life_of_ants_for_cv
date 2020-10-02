@@ -23,17 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef8ef2c7-ff07-4dcc-b5e8-7172b3e004c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/Colony.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Ant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Drone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Queen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Soldier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Worker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/keyListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ants.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ants.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/Colony.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/Colony.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/Simulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Ant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Drone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Drone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Soldier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Soldier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Worker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/ants/geometry/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/ants/geometry/Direction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,8 +116,16 @@
       <option name="presentableId" value="Default" />
       <updated>1590912147308</updated>
       <workItem from="1590912150562" duration="3156000" />
-      <workItem from="1601631721773" duration="12636000" />
+      <workItem from="1601631721773" duration="16605000" />
     </task>
+    <task id="LOCAL-00001" summary="working but not done yet">
+      <created>1601644771422</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601644771422</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +147,8 @@
       <path value="$PROJECT_DIR$/../../../.." />
     </ignored-roots>
     <MESSAGE value="Ants can move without testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ants can move without testing" />
+    <MESSAGE value="working but not done yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="working but not done yet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="553" y="-815" key="#com.intellij.ide.util.MemberChooser" timestamp="1601641376588">
@@ -153,45 +159,56 @@
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
     <state x="478" y="-775" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601640743751" />
-    <state width="1878" height="844" key="GridCell.Tab.0.bottom" timestamp="1601644728918">
+    <state width="1878" height="907" key="GridCell.Tab.0.bottom" timestamp="1601648575615">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="844" key="GridCell.Tab.0.bottom/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601644728918" />
-    <state width="1878" height="844" key="GridCell.Tab.0.center" timestamp="1601644728917">
+    <state width="1878" height="907" key="GridCell.Tab.0.bottom/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601648575615" />
+    <state width="1878" height="907" key="GridCell.Tab.0.center" timestamp="1601648575614">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="844" key="GridCell.Tab.0.center/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601644728917" />
-    <state width="1878" height="844" key="GridCell.Tab.0.left" timestamp="1601644728916">
+    <state width="1878" height="907" key="GridCell.Tab.0.center/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601648575614" />
+    <state width="1878" height="907" key="GridCell.Tab.0.left" timestamp="1601648575614">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="844" key="GridCell.Tab.0.left/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601644728916" />
-    <state width="1878" height="844" key="GridCell.Tab.0.right" timestamp="1601644728917">
+    <state width="1878" height="907" key="GridCell.Tab.0.left/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601648575614" />
+    <state width="1878" height="907" key="GridCell.Tab.0.right" timestamp="1601648575615">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="844" key="GridCell.Tab.0.right/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601644728917" />
-    <state width="1878" height="247" key="GridCell.Tab.1.bottom" timestamp="1601644070651">
+    <state width="1878" height="907" key="GridCell.Tab.0.right/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601648575615" />
+    <state width="1878" height="288" key="GridCell.Tab.1.bottom" timestamp="1601647355175">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="247" key="GridCell.Tab.1.bottom/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601644070651" />
-    <state width="1878" height="247" key="GridCell.Tab.1.center" timestamp="1601644070650">
+    <state width="1878" height="288" key="GridCell.Tab.1.bottom/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601647355175" />
+    <state width="1878" height="288" key="GridCell.Tab.1.center" timestamp="1601647355174">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="247" key="GridCell.Tab.1.center/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601644070650" />
-    <state width="1878" height="247" key="GridCell.Tab.1.left" timestamp="1601644070650">
+    <state width="1878" height="288" key="GridCell.Tab.1.center/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601647355174" />
+    <state width="1878" height="288" key="GridCell.Tab.1.left" timestamp="1601647355174">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="247" key="GridCell.Tab.1.left/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601644070650" />
-    <state width="1878" height="247" key="GridCell.Tab.1.right" timestamp="1601644070650">
+    <state width="1878" height="288" key="GridCell.Tab.1.left/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601647355174" />
+    <state width="1878" height="288" key="GridCell.Tab.1.right" timestamp="1601647355175">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="247" key="GridCell.Tab.1.right/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601644070650" />
+    <state width="1878" height="288" key="GridCell.Tab.1.right/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601647355175" />
     <state x="249" y="-890" key="SettingsEditor" timestamp="1601631746303">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
     <state x="249" y="-890" key="SettingsEditor/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601631746303" />
-    <state x="447" y="-774" width="586" height="548" key="find.popup" timestamp="1601642485133">
+    <state x="447" y="-774" width="586" height="548" key="find.popup" timestamp="1601647266624">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="447" y="-774" width="586" height="548" key="find.popup/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601642485133" />
+    <state x="447" y="-774" width="586" height="548" key="find.popup/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1601647266624" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/codecool/ants/ants/Ant.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

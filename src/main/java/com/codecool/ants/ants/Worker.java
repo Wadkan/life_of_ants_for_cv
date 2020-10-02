@@ -1,12 +1,13 @@
 package com.codecool.ants.ants;
 
 import com.codecool.ants.geometry.Direction;
+import com.codecool.ants.geometry.Position;
 
 import java.util.Random;
 
 public class Worker extends Ant {
-    public Worker(){
-        super();
+    public Worker(int withAndHeight, Position queenPosition){
+        super(withAndHeight, queenPosition);
     }
 
     @Override

@@ -1,19 +1,21 @@
 package com.codecool.ants.ants;
 
 import com.codecool.ants.geometry.Direction;
+import com.codecool.ants.geometry.Position;
 
 public class Soldier extends Ant {
-    int lastStep = 3;
-    int actualStep;
+    int actualStep = 3;
+    Direction direction;
 
-    public Soldier(){
-        super();
+    public Soldier(int withAndHeight, Position queenPosition) {
+        super(withAndHeight, queenPosition);
     }
 
     @Override
     public void move() {
-        actualStep = lastStep + 1 % Direction.values().length;
-        Direction.getElementByIndex(actualStep);
+        actualStep = actualStep % (Direction.values().length);
+        direction = Direction.getElementByIndex(actualStep++);
+        setPosition(direction);
     }
 
     @Override

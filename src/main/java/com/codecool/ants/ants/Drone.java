@@ -6,11 +6,18 @@ import com.codecool.ants.geometry.Position;
 import java.util.Random;
 
 public class Drone extends Ant {
+    final String BLACK = "\033[0;30m";   // BLACK
+    final String RED = "\033[0;31m";     // RED
+
     boolean whatPositionToChanged = true;
     int timeStepsLeft;
 
-    public Drone(){
-        super();
+    // TODO queen.ifMoodForMating();
+    Queen queen;
+
+    public Drone(int withAndHeight, Position queenPosition, Queen queen) {
+        super(withAndHeight, queenPosition);
+        this.queen = queen;
     }
 
     @Override
@@ -58,15 +65,12 @@ public class Drone extends Ant {
     }
 
     private void mating() {
-        // TODO Queen.ifMoodForMating();
-        boolean ifQueenInMoodForMating = true;
-
-        if (ifQueenInMoodForMating) {
-            System.out.println("HALLELUJAH");
+        if (queen.ifMoodForMating()) {
+            System.out.println(RED + "HALLELUJAH" + BLACK);
             //  stay there for 10 timesteps
             timeStepsLeft = 11;
         } else {
-            System.out.println(":(");
+            System.out.println(RED + ":(" + BLACK);
             kickOffToTheEdge();
         }
     }
@@ -87,7 +91,11 @@ public class Drone extends Ant {
 
     @Override
     public String toString() {
-        return "D";
+        if (this.timeStepsLeft > 0) {
+            return Integer.toString(timeStepsLeft - 2);
+        } else {
+            return "D";
+        }
     }
 
 }

@@ -9,14 +9,19 @@ public abstract class Ant {
     protected Position position;
     Random r = new Random();
 
-    // TODO set get widthAndHeight from Colony object
-    protected int withAndHeight = 10;
+    // TODO get from Colony object
+    protected int withAndHeight;
+    protected Position queenPosition;
 
-    // TODO: getQueenPosizion
-    protected Position queenPosition = new Position(3, 3);
+    public Ant(Position position) {
+        this.position = position;
+    }
 
+    public Ant(int withAndHeight, Position queenPosition) {
+        // TODO how to get them colony?
+        this.withAndHeight = withAndHeight;
+        this.queenPosition = queenPosition;
 
-    public Ant() {
         int x = r.nextInt(withAndHeight);
         int y = r.nextInt(withAndHeight);
 

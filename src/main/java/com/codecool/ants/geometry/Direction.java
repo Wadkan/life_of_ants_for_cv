@@ -14,7 +14,7 @@ public enum Direction {
             case 3:
                 return WEST;
             default:
-                System.out.println("Error in enum!");
+                System.out.println("Error in enum! " + index);
                 return NORTH;
         }
     }

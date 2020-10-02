@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class Queen extends Ant {
     public Queen(Position position) {
-        this.position = position;
+        super(position);
     }
 
     @Override

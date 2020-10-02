@@ -1,25 +1,22 @@
 package com.codecool.ants;
 
-import com.codecool.ants.ants.Ant;
-import com.codecool.ants.ants.Drone;
-import com.codecool.ants.ants.Worker;
+import com.codecool.ants.ants.*;
 import com.codecool.ants.geometry.Direction;
 import com.codecool.ants.geometry.Position;
-import com.codecool.ants.ants.Queen;
 
 import java.util.*;
 
 public class Colony {
-    int withAndHeight;
-    private Queen queen;
+    protected int withAndHeight;
+    protected Queen queen;
     private List<Ant> ants = new ArrayList<>();
     Direction direction;
     private Optional[][] colonyMap;
 
 
     public Colony(int with) {
-        this.withAndHeight = with;
-        colonyMap = new Optional[withAndHeight][withAndHeight];
+        colonyMap = new Optional[with][with];
+        this.withAndHeight = with - 1;
 
         int middle = Math.round(with / 2);
         Position queenPosition = new Position(middle, middle);
@@ -33,6 +30,7 @@ public class Colony {
                 colonyMap[row][col] = Optional.empty();
             }
         }
+        colonyMap[queen.getPosition().x][queen.getPosition().y] = Optional.of(queen);
     }
 
 
@@ -42,17 +40,17 @@ public class Colony {
         Ant S;
 
         while (dronesNum > 0) {
-            D = new Drone();
+            D = new Drone(getWithAndHeight(), getQueenPosition(), queen);
             ants.add(D);
             dronesNum--;
         }
         while (workersNum > 0) {
-            W = new Worker();
+            W = new Worker(getWithAndHeight(), getQueenPosition());
             ants.add(W);
             workersNum--;
         }
         while (soldiersNum > 0) {
-            S = new Drone();
+            S = new Soldier(getWithAndHeight(), getQueenPosition());
             ants.add(S);
             soldiersNum--;
         }
@@ -72,15 +70,24 @@ public class Colony {
         Optional ant;
         String print;
         String separator = " ";
+        String color;
+
+        final String BLACK = "\033[0;30m";   // BLACK
+        final String BLUE = "\033[0;34m";    // BLUE
+        final String PURPLE = "\033[0;35m";  // PURPLE
+        final String RED = "\033[0;31m";     // RED
+        final String GREEN = "\033[0;32m";   // GREEN
+        final String CYAN = "\033[0;36m";    // CYAN
 
 
         for (int col = 0; col < withAndHeight; col++) {
-            System.out.print(col + separator);
+            System.out.print(BLUE + col + separator);
         }
-        System.out.println();
+        System.out.println(BLACK);
 
         for (int row = 0; row < withAndHeight; row++) {
-            System.out.print(row + separator);
+            System.out.print(BLUE + row + separator);
+            System.out.print(BLACK);
             for (int col = 0; col < withAndHeight; col++) {
                 ant = colonyMap[row][col];
                 if (ant.isPresent()) {
@@ -88,7 +95,23 @@ public class Colony {
                 } else {
                     print = " ";
                 }
-                System.out.print(print + separator);
+                switch (print) {
+                    case "Q":
+                        color = PURPLE;
+                        break;
+                    case "W":
+                        color = RED;
+                        break;
+                    case "S":
+                        color = GREEN;
+                        break;
+                    case "":
+                        color = CYAN;
+                        break;
+                    default:
+                        color = BLACK;
+                }
+                System.out.print(color + print + separator + BLACK);
             }
             System.out.println();
         }
@@ -98,7 +121,7 @@ public class Colony {
         return withAndHeight;
     }
 
-    public Position getQueenPosizion() {
+    public Position getQueenPosition() {
         return this.queen.getPosition();
     }
 
